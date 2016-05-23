@@ -1,0 +1,29 @@
+# 站点设定
+title: 无名汉化组
+email: whuihuan@outlook.com
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: "http://www.wmhhz.com"
+twitter_username: SuikaScarlet
+github_username: whuihuan
+permalink: none
+
+# 自定义配置
+author:
+  name: 砕月
+  weibo: 威严的审判长四季映姬
+
+# 全局设定
+relative_permalinks: true
+timezone: Asia/Shanghai
+encoding: UTF-8
+
+# 编译设定
+markdown: kramdown
+
+# 服务器设定
+host: 0.0.0.0
+port: 14342
