@@ -1,0 +1,19 @@
+<nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                {% for page in site.pages %}
+                {% if page.title %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+                  </ul>
+                </li>
+               </ul>
+            </div><!-- /.navbar-collapse -->
+          </nav>

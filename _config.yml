@@ -7,7 +7,6 @@ description: >
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: "http://www.wmhhz.com"
-twitter_username: SuikaScarlet
 github_username: whuihuan
 permalink: none
 
@@ -15,6 +14,12 @@ permalink: none
 author:
   name: 砕月
   weibo: 威严的审判长四季映姬
+
+topic:
+  - title: 公告
+    text: 欢迎进入无名汉化组官网
+  - title: 通知
+    text: 汉化发布
 
 # 全局设定
 timezone: Asia/Shanghai
