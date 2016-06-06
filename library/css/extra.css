@@ -103,3 +103,6 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+.smallfont {
+  font-size: 13px;
+}

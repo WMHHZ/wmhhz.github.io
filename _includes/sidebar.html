@@ -2,20 +2,20 @@
 {% for tip in site.topic %}
 <div class="panel panel-primary">
       <div class="panel-heading">
-        <h3 class="panel-title">{{ tip.title }}</h3>
+        <h3 class="panel-title smallfont">{{ tip.title }}</h3>
       </div>
-      <div class="panel-body">
+      <div class="panel-body smallfont">
         {{ tip.text }}
       </div>
     </div>
 {% endfor %}
 <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title">{{ site.string.topic2 }}</h3>
+        <h3 class="panel-title smallfont">{{ site.string.topic2 }}</h3>
       </div>
       <div class="panel-body">
       {% for tip in site.topic2 %}
-      <div class="alert alert-success">
+      <div class="alert alert-success smallfont">
         <a href={{ tip.text }}>{{ tip.title }}</a><br>
         </div>
         {% endfor %}
