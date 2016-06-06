@@ -7,7 +7,6 @@ description: >
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: "http://www.wmhhz.com"
-github_username: whuihuan
 permalink: none
 
 # 自定义配置
@@ -15,11 +14,20 @@ author:
   name: 砕月
   weibo: 威严的审判长四季映姬
 
+string:
+  topic2: 最新动态
+  
 topic:
   - title: 公告
     text: 欢迎进入无名汉化组官网
   - title: 通知
     text: 汉化发布
+    
+topic2:
+  - title: 【2014/08/05】GTASA、GTAIII都发布汉化新版本啦 
+    text: /news3
+  - title: 【2014/07/24】侠盗猎车手3汉化将于下月发布 
+    text: /news2
 
 # 全局设定
 timezone: Asia/Shanghai
