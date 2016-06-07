@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 首页
 ---
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

@@ -7,11 +7,17 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-01">
               <ul class="nav navbar-nav navbar-left">
-                {% for page in site.pages %}
-                {% if page.title %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %}
-                {% endfor %}
+              <li><a href="/">首页</a></li>
+              {%if page.title == '项目' %}
+              <li class="active"><a href="/Projects">项目</a></li>
+              {% else %}
+              <li><a href="/Projects">项目</a></li>
+              {% endif %}
+              {%if page.title == '关于' %}
+              <li class="active"><a href="/About">关于</a></li>
+              {% else %}
+              <li><a href="/About">关于</a></li>
+              {% endif %}
                   </ul>
                 </li>
                </ul>

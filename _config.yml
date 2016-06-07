@@ -2,9 +2,7 @@
 title: 无名汉化组
 email: whuihuan@outlook.com
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  没有最好，只有更好；无名汉化，因你存在！
 baseurl: ""
 url: "http://www.wmhhz.com"
 permalink: none
@@ -16,19 +14,57 @@ author:
 
 string:
   topic2: 最新动态
+  weibo: 微博
   
 topic:
   - title: 公告
     text: 欢迎进入无名汉化组官网
   - title: 通知
-    text: 1.官网正在改版中<br>2.汉化正在准备发布
+    text: 1.官网正在改版中<br>2.汉化正在准备发布<br>3.网站暂时不能使用，等待下一次更新
     
 topic2:
-  - title: 【2014/08/05】GTASA、GTAIII都发布汉化新版本啦 
-    text: /news3
-  - title: 【2014/07/24】侠盗猎车手3汉化将于下月发布 
-    text: /news2
+  - title: 【2016/06/07】网站恢复中 
+    text: /news1
 
+projectnum: 4
+
+projects:
+  - title: 《侠盗猎车手：圣安地列斯》
+    logo: http://photo.wmhhz.com/GTASA.jpg
+    ver: 2.11
+    jindu: 100%
+    setback: 已完成
+    type: 游戏
+    time: 20160320
+    page: /GTASA
+    
+  - title: 《侠盗猎车手3》
+    logo: http://photo.wmhhz.com/GTA3.jpg
+    ver: 1.0
+    jindu: 100%
+    setback: 已完成
+    type: 游戏
+    time: 20160630
+    page: /GTA3
+    
+  - title: 《侠盗猎车手：罪恶都市》
+    logo: http://photo.wmhhz.com/GTAVC.jpg
+    ver: 1.0
+    jindu: 88%
+    setback: 88%
+    type: 游戏
+    time: 20160804
+    page: /GTAVC
+    
+  - title: 《侠盗猎车手3：冬霜》
+    logo: http://photo.wmhhz.com/GTA3FW.jpg
+    ver: 1.0
+    jindu: 0%
+    setback: 0%
+    type: MOD
+    time: N/A
+    page: /GTA3FW
+    
 # 全局设定
 timezone: Asia/Shanghai
 encoding: UTF-8
