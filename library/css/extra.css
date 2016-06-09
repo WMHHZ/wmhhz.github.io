@@ -106,3 +106,17 @@ body {
 .smallfont {
   font-size: 13px;
 }
+.bigfont {
+  font-size: 15px;
+}
+.post-meta {
+    font-size: 14px;
+    color: #828282;
+}
+.post-header {
+  margin-bottom: 30px; 
+}
+.post-title {
+  letter-spacing: -1px;
+  line-height: 1; 
+}

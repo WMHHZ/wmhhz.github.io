@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+{% for post in site.categories.news %}
+<h5>{{ post.title }}</h5>
+<p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+{% endfor %}
