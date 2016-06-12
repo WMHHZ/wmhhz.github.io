@@ -1,0 +1,17 @@
+        <div class="col-sm-3 col-sm-offset-9 col-md-3 col-md-offset-9 sidebar">
+<div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title smallfont">《{{ page.title }}》汉化下载</h3>
+      </div>
+      <div class="panel-body">
+       <p>版本：<a class="btn btn-success btn-xs">{{ page.ver }}</a></p> 
+       <p>版本日期：<a class="btn btn-primary btn-xs">{{ page.time | date: "%Y年%m月%d日" }}</a></p> 
+       <p>项目建立日期：<a class="btn btn-warning btn-xs">{{ page.date | date: "%Y年%m月%d日" }}</a></p>
+       {% if page.download == 0 %}
+               <a class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无下载</a>
+       {% else %}
+               <a class="btn btn-primary" href="{{ page.download }}"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载</a>
+        {% endif %}
+      </div>
+    </div>
+        </div>

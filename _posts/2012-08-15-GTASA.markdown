@@ -1,0 +1,13 @@
+---
+layout: project
+title:  "侠盗猎车手：圣安地列斯"
+date:   2012-08-15 00:00:00
+categories: Project
+logo: http://photo.wmhhz.com/GTASA.jpg
+ver: Kana(2.11)
+jindu: 100
+type: 游戏
+time: 2016-03-20
+permalink: /GTASA/
+download: 0
+---

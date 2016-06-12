@@ -1,4 +1,4 @@
-# 站点设定
+# 站点设定——
 title: 无名汉化组
 email: whuihuan@outlook.com
 description: >
@@ -7,65 +7,36 @@ baseurl: ""
 url: "http://www.wmhhz.com"
 permalink: none
 
-# 自定义配置
-author:
-  name: 砕月
-  weibo: 威严的审判长四季映姬
+# 自定义配置——
 
+#字符串定义
 string:
   topic2: 最新动态
   weibo: 微博
 
+#公告
 topic:
   - title: 公告
     text: 欢迎进入无名汉化组官网
   - title: 通知
     text: 1.官网正在改版中<br>2.汉化正在准备发布<br>3.网站暂时不能使用，等待下一次更新
-    
+
+#动态
 topic2:
+  - title: 【2016/06/10】网站恢复中 
+    text: /news/news1
   - title: 【2016/06/10】网站恢复中 
     text: /news/news1
   - title: 查看更多动态
     text: /news
 
-projectnum: 3
-
-projects:
-  - title: 《侠盗猎车手：圣安地列斯》
-    logo: http://photo.wmhhz.com/GTASA.jpg
-    ver: Kana(2.11)
-    jindu: 100%
-    setback: 已完成
-    type: 游戏
-    time: 20160320
-    page: /GTASA
-    
-  - title: 《侠盗猎车手3》
-    logo: http://photo.wmhhz.com/GTA3.png
-    ver: Tenshi(1.0)
-    jindu: 100%
-    setback: 已完成
-    type: 游戏
-    time: 20160630
-    page: /GTA3
-    
-  - title: 《侠盗猎车手：罪恶都市》
-    logo: http://photo.wmhhz.com/GTAVC.jpg
-    ver: Scarlet(1.0)
-    jindu: 88%
-    setback: 88%
-    type: 游戏
-    time: 20160804
-    page: /GTAVC
-    
-    
-# 全局设定
+# 全局设定——
 timezone: Asia/Shanghai
 encoding: UTF-8
 
-# 编译设定
+# 编译设定——
 markdown: kramdown
 
-# 服务器设定
+# 服务器设定——
 host: 0.0.0.0
 port: 14342

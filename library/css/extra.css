@@ -120,3 +120,14 @@ body {
   letter-spacing: -1px;
   line-height: 1; 
 }
+.header_line{
+    height: 1px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+.header_line span{
+    position: relative;
+    top: -8px;
+    background: #fff;
+    padding: 0 20px;
+}

@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<h4>汉化库里存在{{ site.projectnum }}个项目</h4>
-{% for pro in site.projects %}
+{{ content }}
+{% for pro in site.categories.Project %}
  <div class="jumbotron"> 
    <div class="container"> 
     <div class="row"> 
@@ -13,20 +13,32 @@ layout: default
      </div> 
      <div class="col-md-6"> 
       <div class="caption"> 
-       <h5>{{ pro.title }}</h5> 
+       <h5>《{{ pro.title }}》</h5> 
        <p>类型：<a class="btn btn-info btn-xs">{{ pro.type }}</a></p> 
        <p>版本：<a class="btn btn-success btn-xs">{{ pro.ver }}</a></p> 
-       <p>日期：<a class="btn btn-success btn-xs">{{ pro.time }}</a></p> 
+       <p>版本日期：<a class="btn btn-primary btn-xs">{{ pro.time | date: "%Y年%m月%d日" }}</a></p> 
+       <p>项目建立日期：<a class="btn btn-warning btn-xs">{{ pro.date | date: "%Y年%m月%d日" }}</a></p> 
       </div> 
      </div> 
      <div class="col-md-3"> 
      <br>
      <br>
       <p>汉化进度：</p> 
-      <div class="progress  progress-striped"> 
-       <div class="progress-bar progress-bar-success" style="width: {{ pro.jindu }};">{{ pro.setback }}</div>  
+      <div class="progress"> 
+      {% if  pro.jindu == 100 %}
+       <div class="progress-bar progress-bar-success" style="width: {{ pro.jindu }}%;">已完成</div>    
+       {% endif %}
+       {% if 59 < pro.jindu < 100 %}
+       <div class="progress-bar" style="width: {{ pro.jindu }}%;">{{ pro.jindu }}%</div>  
+       {% endif %}
+       {% if 0 < pro.jindu < 60 %}
+       <div class="progress-bar progress-bar-warning" style="width: {{ pro.jindu }}%;">{{ pro.jindu }}%</div>
+       {% endif %}
+       {% if  pro.jindu == 0 %}
+       <div class="progress-bar progress-bar-warning" style="width: {{ pro.jindu }}%;">无</div>
+       {% endif %}
       </div> 
-       <a class="btn btn-primary" href="{{ pro.page }}">点击进入项目页</a>
+       <a class="btn btn-inverse" href="{{ pro.url }}"><span class="glyphicon glyphicon-align-justify" aria-hidden="true">　</span>点击进入项目页</a>
      </div> 
     </div> 
    </div>
