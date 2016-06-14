@@ -1,9 +1,10 @@
 ---
 layout: projects
-title: 项目
-permalink: /Projects/
+title: 正在进行的项目
+permalink: /Projects/Making
 ---
 {% for pro in site.categories.Project %}
+{% if pro.jindu < 100 %}
  <div class="jumbotron"> 
    <div class="container"> 
     <div class="row"> 
@@ -41,4 +42,5 @@ permalink: /Projects/
     </div> 
    </div>
   </div>
+{% endif %}
 {% endfor %}

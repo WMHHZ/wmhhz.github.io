@@ -1,17 +1,59 @@
         <div class="col-sm-3 col-sm-offset-9 col-md-3 col-md-offset-9 sidebar">
 <div class="panel panel-success">
       <div class="panel-heading">
-        <h3 class="panel-title smallfont">《{{ page.title }}》汉化下载</h3>
+        <h3 class="panel-title smallfont">《{{ page.title }}》资源下载</h3>
       </div>
       <div class="panel-body">
-       <p>版本：<a class="btn btn-success btn-xs">{{ page.ver }}</a></p> 
-       <p>版本日期：<a class="btn btn-primary btn-xs">{{ page.time | date: "%Y年%m月%d日" }}</a></p> 
-       <p>项目建立日期：<a class="btn btn-warning btn-xs">{{ page.date | date: "%Y年%m月%d日" }}</a></p>
-       {% if page.download == 0 %}
-               <a class="btn btn-danger"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无下载</a>
+       <p class="smallfont">版本：<span class="label label-success bigfont">{{ page.ver }}</span></p> 
+       <p class="smallfont">版本日期：<span class="label label-primary bigfont">{{ page.time | date: "%Y年%m月%d日" }}</span></p> 
+       <p class="smallfont">项目建立日期：<span class="label label-warning bigfont">{{ page.date | date: "%Y年%m月%d日" }}</span></p>
+       {% if page.tiquma == 0 %}
+               <p class="smallfont">暂无汉化资源提取码</p>
        {% else %}
-               <a class="btn btn-primary" href="{{ page.download }}"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载</a>
+               <p class="smallfont">汉化资源提取码：<span class="label label-info bigfont">{{ page.tiquma }}</span></p>
         {% endif %}
+        {% if page.exres %}
+        {% for res in page.exres %}
+       {% if res.tiquma == 0 %}
+               <p class="smallfont">暂无{{ res.name }}提取码</p>
+       {% else %}
+               <p class="smallfont">{{ res.name }}提取码：<span class="label label-info bigfont">{{ res.tiquma }}</span></p>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+       {% if page.download == 0 %}
+               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无汉化下载</a>
+       {% else %}
+               <a class="btn btn-primary btn-xs" href="{{ page.download }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载汉化</a>
+        {% endif %}
+       {% if page.game == 0 %}
+               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无游戏下载</a>
+       {% else %}
+               <a class="btn btn-primary btn-xs" href="{{ page.game }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载游戏</a>
+        {% endif %}
+        {% if page.exres %}
+        {% for res in page.exres %}
+       {% if res.down == 0 %}
+               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无{{ res.name }}下载</a>
+       {% else %}
+               <a class="btn btn-primary btn-xs" href="{{ res.down }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载{{ res.name }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+<div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title smallfont">《{{ page.title }}》汉化更新日志</h3>
+      </div>
+      <div class="panel-body smallfont">
+      {% if page.rizhi %}
+      {% for rizhi in page.rizhi %}
+      ·{{ rizhi.time | date: "%Y年%m月%d日"  }} {{ rizhi.rz }}<br>
+      {% endfor %}
+      {% else %}
+      暂无更新日志
+      {% endif %}
       </div>
     </div>
         </div>

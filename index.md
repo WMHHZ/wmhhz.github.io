@@ -14,7 +14,7 @@ layout: default
       <img src="/wm.jpg" alt="INDEX">
       <div class="carousel-caption">
         <a class="btn btn-info btn-sm" href="/About">了解无名汉化组</a>　<a class="btn btn-info btn-sm" href="/Projects">查看无名汉化组汉化项目</a>
-        <p class="smallfont" >无名汉化组系一群游戏爱好者组成的汉化组织，成立于2012年，第一款汉化作品为《侠盗猎车手：圣安地列斯》。</p>
+        <p class="smallfont" >无名汉化组系一群游戏爱好者组成的汉化组织，成立于2012年。</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,21 @@
+<div class="header clearfix smallfont">
+        <nav>
+          <ul class="nav nav-tabs nav-justified pull-left">
+          {%if page.title == '项目' %}
+            <li role="presentation" class="active"><a href="/Projects">全部</a></li>
+            {% else %}
+            <li role="presentation"><a href="/Projects">全部</a></li>
+            {% endif %}
+             {%if page.title == '已完成项目' %}
+            <li role="presentation" class="active"><a href="/Projects/Completed">已完成</a></li>
+            {% else %}
+            <li role="presentation"><a href="/Projects/Completed">已完成</a></li>
+            {% endif %}
+             {%if page.title == '正在进行的项目' %}
+            <li role="presentation" class="active"><a href="/Projects/Making">正在进行</a></li>
+            {% else %}
+            <li role="presentation"><a href="/Projects/Making">正在进行</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      </div>
