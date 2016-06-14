@@ -3,7 +3,7 @@ layout: project
 title:  "侠盗猎车手：罪恶都市"
 date:   2016-01-25 00:00:00
 categories: Project
-logo: http://photo.wmhhz.com/GTAVC.jpg
+logo: http://www.wmhhz.com/img/GTAVC.jpg
 ver: Scarlet(1.0)
 jindu: 88
 type: 游戏

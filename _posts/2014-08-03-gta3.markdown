@@ -3,7 +3,7 @@ layout: project
 title:  "侠盗猎车手3"
 date:   2014-08-03 00:00:00
 categories: Project
-logo: http://photo.wmhhz.com/GTA3.png
+logo: http://www.wmhhz.com/img/GTA3.png
 ver: Witch(0.9)
 jindu: 100
 type: 游戏
