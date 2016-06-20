@@ -1,3 +1,89 @@
 <div class="col-sm-9 col-md-9 main">
+ <header class="post-header">
+  <h3 class="post-title">{{ page.title }}</h3>
+  <div class="header_line"></div>
+ </header>
+ <article class="bigfont">
+ <p class="bg-info">
+ {{ page.description }}
+ </p>
+<div class="alert alert-warning alert-dismissible visible-xs-block" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ <strong>提示：</strong>手机用户在浏览本网页的时候仅能看到汉化信息，为了节省您的流量，我们自动隐藏了缩略图，若需查看详情或下载，请使用电脑访问本网页，下载窗口在右侧。
+ </div>
+ <p class="bg-success  visible-xs-block">
+ <b>特色：</b><br>
+  {{ page.tese }}
+ </p>
+ <div class="panel panel-success visible-xs-block">
+      <div class="panel-heading">
+        <h3 class="panel-title smallfont">《{{ page.title }}》汉化信息</h3>
+      </div>
+      <div class="panel-body smallfont">
+       <p class="smallfont">版本：<span class="label label-success bigfont">{{ page.ver }}</span></p> 
+       <p class="smallfont">版本日期：<span class="label label-primary bigfont">{{ page.time | date: "%Y/%m/%d" }}</span></p> 
+       <p class="smallfont">项目建立日期：<span class="label label-warning bigfont">{{ page.date | date: "%Y/%m/%d" }}</span></p>
+      </div>
+    </div>
  {{ content }}
+  <div class="panel panel-primary hidden-xs">
+ <div class="panel-heading">
+<h3 class="panel-title smallfont">《{{ page.title }}》汉化预览</h3>
+</div>
+ <div class="panel-body">
+     <div class="row"> 
+     <div class="col-md-3"> 
+      <div class="thumbnail"> 
+      <div class="dropdown dropup">
+       <a  id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img style="width: 300px; height: 200px;" alt="300x200" src="{{ page.main }}" data-src="holder.js/300x200"/></a>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+<li><img style="width: 600px; height: 400px;" alt="600x400" src="{{ page.main }}" data-src="holder.js/600x400"/></li>
+  </ul>
+</div>
+      </div> 
+      <div class="caption"> 
+      <p align="center">主菜单</p>
+</div> 
+</div> 
+     <div class="col-md-3"> 
+      <div class="thumbnail"> 
+      <div class="dropdown dropup">
+              <a  id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img style="width: 300px; height: 200px;" alt="300x200" src="{{ page.paused }}" data-src="holder.js/300x200"/> </a>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+<li><img style="width: 600px; height: 400px;" alt="600x400" src="{{ page.paused }}" data-src="holder.js/600x400"/></li>
+  </ul>
+</div>
+      </div> 
+      <div class="caption"> 
+      <p align="center">暂停菜单</p>
+</div> 
+</div>
+     <div class="col-md-3"> 
+      <div class="thumbnail"> 
+      <div class="dropdown dropup">
+              <a  id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img style="width: 300px; height: 200px;" alt="300x200" src="{{ page.screenshot1 }}" data-src="holder.js/300x200"/> </a>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+<li><img style="width: 600px; height: 400px;" alt="600x400" src="{{ page.screenshot1 }}" data-src="holder.js/600x400"/></li>
+  </ul>
+</div>
+      </div> 
+      <div class="caption"> 
+      <p align="center">游戏截图1</p>
+</div> 
+</div> 
+     <div class="col-md-3"> 
+      <div class="thumbnail"> 
+      <div class="dropdown dropup">
+              <a  id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img style="width: 300px; height: 200px;" alt="300x200" src="{{ page.screenshot2 }}" data-src="holder.js/300x200"/> </a>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+<li><img style="width: 600px; height: 400px;" alt="600x400" src="{{ page.screenshot2 }}" data-src="holder.js/600x400"/></li>
+  </ul>
+</div>
+      </div> 
+      <div class="caption"> 
+      <p align="center">游戏截图2</p>
+</div> 
+</div> 
+</div>
+   </article>
 </div>

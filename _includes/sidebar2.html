@@ -1,12 +1,12 @@
         <div class="col-sm-3 col-sm-offset-9 col-md-3 col-md-offset-9 sidebar">
-<div class="panel panel-success">
+<div class="panel panel-info">
       <div class="panel-heading">
         <h3 class="panel-title smallfont">《{{ page.title }}》资源下载</h3>
       </div>
       <div class="panel-body">
        <p class="smallfont">版本：<span class="label label-success bigfont">{{ page.ver }}</span></p> 
-       <p class="smallfont">版本日期：<span class="label label-primary bigfont">{{ page.time | date: "%Y年%m月%d日" }}</span></p> 
-       <p class="smallfont">项目建立日期：<span class="label label-warning bigfont">{{ page.date | date: "%Y年%m月%d日" }}</span></p>
+       <p class="smallfont">版本日期：<span class="label label-primary bigfont">{{ page.time | date: "%Y/%m/%d" }}</span></p> 
+       <p class="smallfont">项目建立日期：<span class="label label-warning bigfont">{{ page.date | date: "%Y/%m/%d" }}</span></p>
        {% if page.tiquma == 0 %}
                <p class="smallfont">暂无汉化资源提取码</p>
        {% else %}
@@ -21,28 +21,46 @@
         {% endif %}
         {% endfor %}
         {% endif %}
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="download" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    选择下载资源
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="download">
+  <li class="dropdown-header">汉化及本体下载</li>
        {% if page.download == 0 %}
-               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无汉化下载</a>
+               <li><a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无汉化下载</a></li>
        {% else %}
-               <a class="btn btn-primary btn-xs" href="{{ page.download }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载汉化</a>
+               <li><a class="btn btn-primary btn-xs" href="{{ page.download }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载汉化</a></li>
         {% endif %}
        {% if page.game == 0 %}
-               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无游戏下载</a>
+               <li><a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无游戏下载</a></li>
        {% else %}
-               <a class="btn btn-primary btn-xs" href="{{ page.game }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载游戏</a>
+               <li><a class="btn btn-primary btn-xs" href="{{ page.game }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>下载游戏</a></li>
         {% endif %}
         {% if page.exres %}
+        <li class="dropdown-header">扩展包下载</li>
         {% for res in page.exres %}
        {% if res.down == 0 %}
-               <a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无{{ res.name }}下载</a>
+               <li><a class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true">　</span>暂无{{ res.name }}下载</a></li>
        {% else %}
-               <a class="btn btn-primary btn-xs" href="{{ res.down }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>点击下载{{ res.name }}</a>
+               <li><a class="btn btn-primary btn-xs" href="{{ res.down }}" target="_blank"><span class="glyphicon glyphicon-save" aria-hidden="true">　</span>下载{{ res.name }}</a></li>
         {% endif %}
         {% endfor %}
         {% endif %}
+  </ul>
+</div>
       </div>
     </div>
 <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title smallfont">《{{ page.title }}》汉化特色</h3>
+      </div>
+      <div class="panel-body smallfont">
+{{ page.tese }}
+      </div>
+    </div>
+<div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title smallfont">《{{ page.title }}》汉化更新日志</h3>
       </div>

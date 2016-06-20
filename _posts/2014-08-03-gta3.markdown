@@ -1,15 +1,97 @@
 ---
 layout: project
 title:  "侠盗猎车手3"
-date:   2014-08-03 00:00:00
+date:   2013-12-25 00:00:00
 categories: Project
-logo: http://www.wmhhz.com/img/GTA3.png
+logo: /img/GTA3.png
+main: /img/GTA3/main.jpg
+paused: /img/GTA3/paused.jpg
+screenshot1: /img/GTA3/screenshot1.jpg
+screenshot2: /img/GTA3/screenshot2.jpg
 ver: Witch(0.9)
 jindu: 100
 type: 游戏
 time: 2014-08-03
 permalink: /gta3/
+description: >
+  　《侠盗猎车手3》的故事背景发生于2001年的自由城（以纽约为原型）。主角克劳德在抢劫银行时遭到其女友卡特琳娜的暗算，不仅重伤，还锒铛入狱。由于一次意外，克劳德侥幸逃离警方的拘禁。漫步于自由城，在纸醉金迷的都市中、在危机重重的黑道间，重获自由的克劳德该何去何从？一切掌握在玩家您手中。<br>　也许，您曾为GTAIII没有汉化而感到遗憾；也许，您曾为GTAIII的汉化进行漫长等待。经过多年的等待，如今，中文版的GTAIII终于展现在众多玩家面前，沧海桑田，时间才是检验一部经典的唯一方法。
+tese: >
+  1.GTA3第一个汉化<br>2.支持主流Windows系统<br>3.内核汉化，不影响性能<br>4.翻译准确，含有俚语与网络语言<br>5.不替换游戏文件
 download: 0
 tiquma: 0
 game: 0
+rizhi:
+  - rz: 发布Witch(0.9)公测版
+    time: 2014-08-03
+  - rz: 翻译结束，润色文本
+    time: 2014-07-05
+  - rz: 主程序优化
+    time: 2014-07-04
+  - rz: 文本分配完成，开始翻译
+    time: 2014-01-03
+  - rz: 汉化程序编写完成
+    time: 2013-12-25
+  - rz: 接手GTA3汉化
+    time: 2013-12-15
 ---
+ <div class="panel panel-primary">
+ <div class="panel-heading">
+<h3 class="panel-title smallfont">《{{ page.title }}》汉化人员</h3>
+</div>
+ <div class="table-responsive">
+<table class="table table-hover table-condensed table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">策划</th>
+          <td>Danch744</td>
+          <td>砕月</td>
+        </tr>
+        <tr>
+          <th scope="row">程序</th>
+          <td>Sanae</td>
+          <td>Clans</td>
+        </tr>
+        <tr>
+          <th scope="row">美工</th>
+          <td>砕月</td>
+          <td>Strong.Team</td>
+          <td>Sunlef</td>
+        </tr>
+        <tr>
+          <th scope="row">翻译</th>
+          <td>砕月</td>
+          <td>TW</td>
+          <td>小馒头</td>
+          <td>小鸡米德</td>
+          <td>凡哥威武</td>
+          <td>Ray</td>
+          <td>马克</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>卡奇</td>
+          <td>转转</td>
+          <td>MacHowskl</td>
+          <td>V</td>
+          <td>NEVER-GIVEUP</td>
+          <td>天堂ぁ撒旦</td>
+        </tr>
+        <tr>
+          <th scope="row">润色</th>
+          <td>TW</td>
+          <td>Sanae</td>
+          <td>砕月</td>
+        </tr>
+        <tr>
+          <th scope="row">后期</th>
+          <td>砕月</td>
+          <td>TW</td>
+          <td>Sanae</td>
+          <td>Sunlef</td>
+          <td>Danch744</td>
+          <td>Clans</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>

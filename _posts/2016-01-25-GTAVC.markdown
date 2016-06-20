@@ -3,13 +3,80 @@ layout: project
 title:  "侠盗猎车手：罪恶都市"
 date:   2016-01-25 00:00:00
 categories: Project
-logo: http://www.wmhhz.com/img/GTAVC.jpg
+logo: /img/GTAVC.png
+main: /img/GTAVC/main.jpg
+paused: /img/GTAVC/paused.jpg
+screenshot1: /img/GTAVC/screenshot1.jpg
+screenshot2: /img/GTAVC/screenshot2.jpg
 ver: Scarlet(1.0)
 jindu: 88
 type: 游戏
 time: 暂未发布
 permalink: /gtavc/
+description: >
+  　《侠盗猎车手：罪恶都市》的故事背景发生于1986年的罪城（以迈阿密为原型）。主角汤米·维赛迪在幕后黑手——桑尼·弗雷利的阴谋下闯荡在罪城，在朋友肯、兰斯等人的帮助下，桑尼企图建立的帝国开始土崩瓦解……友情、背叛、金钱，汤米是否会迷失自我？这一切由玩家去探索。<br>　在罪吧汉化组停止维护汉化后，您可能对其有所更多的期望，现在，我们帮您实现您的期望。
+tese: >
+  1.支持Steam版<br>2.支持主流Windows系统<br>3.内核汉化，不影响性能<br>4.翻译准确，含有俚语与网络语言<br>5.不替换游戏文件
 download: 0
 tiquma: 0
 game: http://pan.baidu.com/share/link?shareid=540149&uk=2500282632
+rizhi:
+  - rz: 汉化程序完成
+    time: 2016-04-10
+  - rz: 文本第二部分完成
+    time: 2016-03-24
+  - rz: 文本第一部分完成
+    time: 2016-02-15
+  - rz: 接手GTAVC汉化
+    time: 2016-01-25
 ---
+ <div class="panel panel-primary">
+ <div class="panel-heading">
+<h3 class="panel-title smallfont">《{{ page.title }}》汉化人员</h3>
+</div>
+ <div class="table-responsive">
+<table class="table table-hover table-condensed table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">策划</th>
+          <td>砕月</td>
+          <td>Clans</td>
+        </tr>
+        <tr>
+          <th scope="row">程序</th>
+          <td>Clans</td>
+        </tr>
+        <tr>
+          <th scope="row">美工</th>
+          <td>砕月</td>
+          <td>Sanae</td>
+          <td>Sunlef</td>
+        </tr>
+        <tr>
+          <th scope="row">翻译</th>
+          <td>砕月</td>
+          <td>TW</td>
+          <td>转转</td>
+          <td>MacHowskl</td>
+          <td>Sunlef</td>
+          <td>疯狂苍蝇男丶</td>
+        </tr>
+        <tr>
+          <th scope="row">润色</th>
+          <td>TW</td>
+          <td>Sanae</td>
+          <td>砕月</td>
+        </tr>
+        <tr>
+          <th scope="row">后期</th>
+          <td>砕月</td>
+          <td>TW</td>
+          <td>Sanae</td>
+          <td>Sunlef</td>
+          <td>Danch744</td>
+          <td>Clans</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>

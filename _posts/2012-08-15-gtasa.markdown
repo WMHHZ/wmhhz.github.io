@@ -3,12 +3,20 @@ layout: project
 title:  "侠盗猎车手：圣安地列斯"
 date:   2012-08-15 00:00:00
 categories: Project
-logo: http://www.wmhhz.com/img/GTASA.jpg
+logo: /img/GTASA.jpg
+main: /img/GTASA/main.jpg
+paused: /img/GTASA/paused.jpg
+screenshot1: /img/GTASA/screenshot1.jpg
+screenshot2: /img/GTASA/screenshot2.jpg
 ver: Kana(2.11)
 jindu: 100
 type: 游戏
 time: 2016-03-20
 permalink: /gtasa/
+description: >
+  《侠盗猎车手：圣安地列斯》讲述着1992年，主角卡尔·约翰逊在得悉母亲被杀死的消息后，回到位于洛圣都的老家，并发现其家庭及他的帮派格罗夫街家族犹如一盘散沙。游戏进行期间，CJ会慢慢解开母亲被杀事件的内情，以及复兴帮派、开拓自己的事业等。
+tese: >
+  1.支持Steam版<br>2.支持主流Windows系统<br>3.内核汉化，不影响性能<br>4.翻译准确，含有俚语与网络语言<br>5.不替换游戏文件
 download: http://pan.baidu.com/s/1htAbG
 tiquma: p94r
 game: http://pan.baidu.com/s/1dFiC6OT
@@ -43,3 +51,71 @@ rizhi:
   - rz: 接手GTASA汉化
     time: 2012-08-30
 ---
+ <div class="panel panel-primary">
+ <div class="panel-heading">
+<h3 class="panel-title smallfont">《{{ page.title }}》汉化人员</h3>
+</div>
+ <div class="table-responsive">
+<table class="table table-hover table-condensed table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">策划</th>
+          <td>Danch744</td>
+        </tr>
+        <tr>
+          <th scope="row">程序</th>
+          <td>Clans</td>
+        </tr>
+        <tr>
+          <th scope="row">美工</th>
+          <td>Danch744</td>
+          <td>ChesterBNT</td>
+        </tr>
+        <tr>
+          <th scope="row">翻译</th>
+          <td>Danch744</td>
+          <td>砕月</td>
+          <td>小馒头</td>
+          <td>小鸡米德</td>
+          <td>Ray</td>
+          <td>NEVER-GIVEUP</td>
+          <td>虫子</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>krammai</td>
+          <td>king</td>
+          <td>TigerQ</td>
+          <td>Big_Smoke</td>
+          <td>闲看云烟火</td>
+          <td>ZGMF</td>
+          <td>路人甲</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Noe。</td>
+          <td>郑成功</td>
+          <td>坏蜀熟+</td>
+          <td>疯狂苍蝇男丶</td>
+          <td>┣ΨyogЖ┫</td>
+          <td>卡奇</td>
+          <td>雨过天晴</td>
+        </tr>
+        <tr>
+          <th scope="row">润色</th>
+          <td>Danch744</td>
+          <td>小鸡米德</td>
+          <td>砕月</td>
+        </tr>
+        <tr>
+          <th scope="row">后期</th>
+          <td>砕月</td>
+          <td>Danch744</td>
+          <td>TigerQ</td>
+          <td>Sunlef</td>
+          <td>Ray</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>

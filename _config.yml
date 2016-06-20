@@ -12,18 +12,17 @@ permalink: none
 #字符串定义
 string:
   topic2: 最新动态
-  weibo: 微博
 
 #公告
 topic:
   - title: 公告
-    text: 欢迎进入无名汉化组官网
-  - title: 通知
-    text: 1.官网正在改版中<br>2.汉化正在准备发布<br>3.网站暂时不能使用，等待下一次更新
+    text: 1.官网恢复的差不多了，可以使用了<br>2.GTA3暂不提供汉化下载，正在调试新版汉化<br>3.下载GTASA汉化请去项目页<br>交流群：<b>5646840</b>←仅此一个交流群<br>欲加入汉化组请联系QQ:<b>1651088879</b>
 
 #动态
 topic2:
-  - title: 【2016/06/10】网站恢复中 
+  - title: 【2016/06/19】网站恢复完成，欢迎使用
+    text: /news/news2
+  - title: 【2016/06/10】网站恢复中
     text: /news/news1
   - title: 查看更多动态
     text: /news
