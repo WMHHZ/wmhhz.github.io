@@ -1,12 +1,14 @@
-<div class="col-sm-9 col-md-9 main">
+<div class="col-sm-9 col-md-9 main" style="display: none" id="container1">
  <header class="post-header">
   <h3 class="post-title">{{ page.title }}</h3>
-  <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}{% if page.author %}　编辑：{{ page.author }}{% endif %}{% if page.author == "Sanae酱" %}  <a class="btn btn-success btn-xs">汉化组主管</a>{% endif %}{% if page.author == "Clans" %}  <a class="btn btn-success btn-xs">汉化组程序员</a>{% endif %}{% if page.author == "砕月" %}  <a class="btn btn-success btn-xs">汉化组官网管理</a>{% endif %}{% if page.meta %}　{{ page.meta }}{% endif %}</p>
+  <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}{% if page.author %}　编辑：{{ page.author }}{% endif %}{% if page.author == "Danch744" %}  <a class="btn btn-success btn-xs">汉化组组长</a>{% endif %}{% if page.author == "Sanae" %}  <a class="btn btn-success btn-xs">汉化组副组长</a>{% endif %}{% if page.author == "Clans" %}  <a class="btn btn-success btn-xs">汉化组程序员</a>{% endif %}{% if page.author == "砕月" %}  <a class="btn btn-success btn-xs">汉化组官网管理</a>{% endif %}{% if page.meta %}　{{ page.meta }}{% endif %}</p>
   <div class="header_line"></div>
  </header>
  <article class="bigfont">
  {{ content }}
    </article>
  <br>
+ {% if page.comments != false %}
  {% include duoshuo.html %}
+ {% endif %}
 </div>

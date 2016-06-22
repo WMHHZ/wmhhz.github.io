@@ -12,21 +12,19 @@ layout: default
     </div>
 {% endfor %}
 
-<div class="alert alert-warning smallfont  visible-xs-block">
+<div class="alert alert-warning smallfont visible-xs-block">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 <strong>提示：</strong>
 当前为移动终端或小屏设备访问，资源下载将受到影响，请更换电脑访问本站。
 </div>
 
-<div class="panel panel-success visible-xs-block">
+<div class="panel panel-success  visible-xs-block">
       <div class="panel-heading">
         <h3 class="panel-title smallfont">{{ site.string.topic2 }}</h3>
       </div>
-      <div class="panel-body">
+      <div class="list-group">
       {% for tip in site.topic2 %}
-      <div class="alert alert-success smallfont">
-        <a href="{{ tip.text }}">{{ tip.title }}</a><br>
-        </div>
+        <a href="{{ tip.text }}" class="list-group-item smallfont">{{ tip.title }}</a>
         {% endfor %}
       </div>
     </div>

@@ -20,6 +20,14 @@ topic:
 
 #动态
 topic2:
+  - title: 【置顶】浅谈无名汉化组-从成立到如今（四）
+    text: /news/wm4
+  - title: 【置顶】浅谈无名汉化组-从成立到如今（三）
+    text: /news/wm3
+  - title: 【置顶】浅谈无名汉化组-从成立到如今（二）
+    text: /news/wm2
+  - title: 【置顶】浅谈无名汉化组-从成立到如今（一）
+    text: /news/wm1
   - title: 【2016/06/19】网站恢复完成，欢迎使用
     text: /news/news2
   - title: 【2016/06/10】网站恢复中
